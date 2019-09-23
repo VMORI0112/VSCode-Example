@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Hello</h1>
+    <p>  People in the group</p>
+
+    <p id="insertPanda"> nada aqui </p>
+
+
+       <p># people </p>
+
+       <p id="numberPeople">  </p>
+
+
+
+
+    <p id="insert1">
+
+     </p>
+
+        <button onclick="myFunction()"> click here  </button>
+
+
+      <div class="newDiv">
+
+
+      </div>
+
+
+      <input id="input"> First name
+
+
+        </input>
+
+        <input id="input2" ondblclick="run()" >
+
+
+        </input>
+
+        <input id="input3" onkeypress="run3()" >
+
+
+        </input>
+
+        <input id="input4" onkeypress="run4(event)" >
+
+
+          </input>
+
+
+
+
+    <script>
+       // console.log(123) ;
+      // let panda="" ;
+
+        let group=["Samir","Trent","Ryan","Victor", "Colby" ];
+        let groupCount=group.length;
+
+    //    document.querySelector("#insertPanda").innerHTML=group ;
+       document.querySelector("#numberPeople").innerHTML=groupCount ;
+
+      function myFunction() {
+
+
+          console.log('clicked')
+          // document.querySelector("#numberPeople").innerHTML=groupCount ;
+          document.querySelector("#insertPanda").innerHTML=group ;
+
+      }
+
+      function multxy(x,y) {
+
+          return x * y
+      }
+
+
+      let result = multxy(109,8)
+
+
+      let newDiv= document.querySelector(".newDiv")
+
+      newDiv.innerHTML = "Hello again"
+
+      newDiv.style.width = '100px'
+      newDiv.style.height = '100px'
+      newDiv.style.backgroundColor = 'red'
+
+
+      let input= document.querySelector("#input")
+
+      input.value="Victor"
+
+
+
+      function run() {
+
+        let input2= document.querySelector("#input2")
+        input2.value = "fer"
+
+         }
+
+
+         function run3() {
+
+                let input3= document.querySelector("#input3")
+                input3.value = "fer"
+                alert('watch out!')
+                }
+
+
+
+          function run4(event) {
+
+
+                if (event.key==='Enter') {
+
+                    let v=document.querySelector("#input4").value ;
+                    newDiv.innerHTML = v;
+                     }
+
+                }
+
+
+
+    //    console.log(v) ;
+
+
+      //  console.log(1 + 7) ;
+    </script>
+</body>
+</html>
